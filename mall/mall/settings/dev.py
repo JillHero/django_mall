@@ -54,6 +54,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
 ]
+AUTH_USER_MODEL = 'users.User'
+
 
 ROOT_URLCONF = 'mall.urls'
 
@@ -203,7 +205,6 @@ LOGGING = {
     }
 }
 
-AUTH_USER_MODEL = 'users.User'
 
 # 白名单的配置 要加上http://
 CORS_ORIGIN_WHITELIST = (

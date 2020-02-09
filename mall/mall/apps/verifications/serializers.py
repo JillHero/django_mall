@@ -26,3 +26,5 @@ class ImageCodeCheckSerializer(serializers.Serializer):
             raise serializers.ValidationError("操作次数过于频繁")
 
         return attrs
+
+

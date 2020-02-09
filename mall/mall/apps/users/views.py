@@ -4,10 +4,12 @@ from django.shortcuts import render
 
 #  usernames/(?P<username>\w{5,20})/count/
 from rest_framework import status
+from rest_framework.generics import GenericAPIView, CreateAPIView
+from rest_framework.mixins import CreateModelMixin
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
-from mall.apps.users.models import User
+from mall.apps.users import serializers
+from users.models import User
 
 
 class UsernameCountView(APIView):
@@ -28,3 +30,7 @@ class MobileCountView(APIView):
             "count": count
         }
         return Response(data, status=status.HTTP_200_OK)
+
+
+class UserView(CreateAPIView):
+    serializer_class = serializers.CreateUserSerializer
