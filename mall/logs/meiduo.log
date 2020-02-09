@@ -1,0 +1,115 @@
+WARNING 2020-02-08 15:44:23,026 base 152 Not Found: /
+WARNING 2020-02-08 15:44:23,026 basehttp 124 "GET / HTTP/1.1" 404 2011
+WARNING 2020-02-08 15:44:23,238 base 152 Not Found: /favicon.ico
+WARNING 2020-02-08 15:44:23,238 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2062
+WARNING 2020-02-08 15:44:47,403 base 152 Not Found: /image_codes/11/
+WARNING 2020-02-08 15:44:47,403 basehttp 124 "GET /image_codes/11/ HTTP/1.1" 404 2080
+WARNING 2020-02-08 15:44:47,695 base 152 Not Found: /favicon.ico
+WARNING 2020-02-08 15:44:47,696 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2068
+WARNING 2020-02-08 15:45:09,863 base 152 Not Found: /
+WARNING 2020-02-08 15:45:09,864 basehttp 124 "GET / HTTP/1.1" 404 2011
+WARNING 2020-02-08 15:45:17,013 base 152 Not Found: /image_codes/11/
+WARNING 2020-02-08 15:45:17,014 basehttp 124 "GET /image_codes/11/ HTTP/1.1" 404 2074
+ERROR 2020-02-08 15:45:36,957 exceptions 25 [<mall.apps.verifications.views.ImageCodeView object at 0x10ff52e90>] Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2020-02-08 15:45:37,015 basehttp 124 "GET /image_codes/11/ HTTP/1.1" 507 9665
+INFO 2020-02-08 15:45:37,095 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2020-02-08 15:45:37,099 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2020-02-08 15:45:37,100 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2020-02-08 15:45:37,101 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2020-02-08 15:45:37,105 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2020-02-08 15:45:37,107 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2020-02-08 15:45:37,111 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2020-02-08 15:45:37,112 basehttp 124 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+INFO 2020-02-08 15:45:37,115 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2020-02-08 15:45:37,115 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2020-02-08 15:45:37,149 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2020-02-08 15:45:45,925 basehttp 124 "GET /image_codes/11/ HTTP/1.1" 200 3360
+INFO 2020-02-08 15:58:07,523 basehttp 124 "GET /image_codes/976f600d-56fa-4118-928a-7ba5a7e2502c/ HTTP/1.1" 200 3377
+INFO 2020-02-08 15:58:08,774 basehttp 124 "GET /image_codes/a925cc97-5d0c-4e2a-a63d-0f3d92319968/ HTTP/1.1" 200 3482
+INFO 2020-02-08 15:58:09,227 basehttp 124 "GET /image_codes/ba094ed4-638e-4779-996c-4d01f97f6a76/ HTTP/1.1" 200 3127
+INFO 2020-02-08 15:58:09,420 basehttp 124 "GET /image_codes/1a6c51a3-f766-460e-a2ff-ea70443cca06/ HTTP/1.1" 200 3111
+INFO 2020-02-08 15:58:09,621 basehttp 124 "GET /image_codes/b1ecbfdd-ec00-4122-8fc8-5209a80821dc/ HTTP/1.1" 200 3237
+INFO 2020-02-08 16:13:26,163 basehttp 124 "GET /image_codes/afbb8cad-d09a-4863-9ead-e2aae3d433c1/ HTTP/1.1" 200 2926
+INFO 2020-02-08 16:14:07,607 basehttp 124 "GET /image_codes/a055dc81-4c5a-4e5a-b925-e6a2cdcebb77/ HTTP/1.1" 200 3266
+WARNING 2020-02-08 18:31:45,476 base 152 Not Found: /
+WARNING 2020-02-08 18:31:45,477 basehttp 124 "GET / HTTP/1.1" 404 2291
+INFO 2020-02-08 18:31:54,313 basehttp 124 "GET /sms_codes/17719715757 HTTP/1.1" 301 0
+ERROR 2020-02-08 18:31:54,323 exception 135 Internal Server Error: /sms_codes/17719715757/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/verifications/views.py", line 35, in get
+    s.is_valid(raise_excrption=True)
+TypeError: is_valid() got an unexpected keyword argument 'raise_excrption'
+ERROR 2020-02-08 18:31:54,424 basehttp 124 "GET /sms_codes/17719715757/ HTTP/1.1" 500 93791
+WARNING 2020-02-08 18:32:44,625 base 152 Not Found: /
+WARNING 2020-02-08 18:32:44,626 basehttp 124 "GET / HTTP/1.1" 404 2291
+WARNING 2020-02-08 18:32:54,292 basehttp 124 "GET /sms_codes/17719715757/ HTTP/1.1" 400 9785
+WARNING 2020-02-08 18:36:14,165 base 152 Not Found: /
+WARNING 2020-02-08 18:36:14,165 basehttp 124 "GET / HTTP/1.1" 404 2297
+WARNING 2020-02-08 18:36:14,489 base 152 Not Found: /favicon.ico
+WARNING 2020-02-08 18:36:14,490 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2348
+WARNING 2020-02-08 18:36:21,290 base 152 Not Found: /register.html
+WARNING 2020-02-08 18:36:21,290 basehttp 124 "GET /register.html HTTP/1.1" 404 2354
+INFO 2020-02-08 18:36:50,690 basehttp 124 "GET /image_codes/71c579aa-3444-4839-9f95-01979778203d/ HTTP/1.1" 200 3381
+INFO 2020-02-08 18:36:53,902 basehttp 124 "GET /image_codes/7675e18d-b9ae-4cad-a1a1-dac59d0ff90e/ HTTP/1.1" 200 3077
+INFO 2020-02-08 18:36:54,356 basehttp 124 "GET /image_codes/263633e4-fd58-41d7-92b8-a75e1f22056f/ HTTP/1.1" 200 2965
+WARNING 2020-02-08 18:36:57,128 base 152 Not Found: /register.html
+WARNING 2020-02-08 18:36:57,129 basehttp 124 "GET /register.html HTTP/1.1" 404 2354
+WARNING 2020-02-08 18:36:58,422 base 152 Not Found: /register.html
+WARNING 2020-02-08 18:36:58,422 basehttp 124 "GET /register.html HTTP/1.1" 404 2354
+INFO 2020-02-08 18:37:11,253 basehttp 124 "GET /image_codes/f7c9a3d9-aaa5-4219-8de6-b85bcf2a8d42/ HTTP/1.1" 200 3402
+WARNING 2020-02-08 18:37:23,773 base 152 Not Found: /mobiles/17719715757/count/
+WARNING 2020-02-08 18:37:23,774 basehttp 124 "GET /mobiles/17719715757/count/ HTTP/1.1" 404 2393
+WARNING 2020-02-08 18:37:42,388 base 152 Not Found: /mobiles/17719715757/count/
+WARNING 2020-02-08 18:37:42,390 basehttp 124 "GET /mobiles/17719715757/count/ HTTP/1.1" 404 2393
+WARNING 2020-02-08 18:37:42,392 basehttp 124 "GET /sms_codes/17719715757/?text=ssss&image_code_id=f7c9a3d9-aaa5-4219-8de6-b85bcf2a8d42 HTTP/1.1" 400 46
+INFO 2020-02-08 18:52:05,804 basehttp 124 "GET /image_codes/92c48a86-e8fa-469c-a738-22411946fa60/ HTTP/1.1" 200 3247
+WARNING 2020-02-08 18:52:08,419 base 152 Not Found: /mobiles/17719715757/count/
+WARNING 2020-02-08 18:52:08,420 basehttp 124 "GET /mobiles/17719715757/count/ HTTP/1.1" 404 2393
+WARNING 2020-02-08 18:52:11,110 base 152 Not Found: /mobiles/17719715757/count/
+WARNING 2020-02-08 18:52:11,113 basehttp 124 "GET /mobiles/17719715757/count/ HTTP/1.1" 404 2393
+WARNING 2020-02-08 18:52:11,121 basehttp 124 "GET /sms_codes/17719715757/?text=ssss&image_code_id=92c48a86-e8fa-469c-a738-22411946fa60 HTTP/1.1" 400 46
+INFO 2020-02-08 19:15:14,961 basehttp 124 "GET /image_codes/0d7aaca3-1b74-45bc-aeb1-a80b77095907/ HTTP/1.1" 200 2907
+INFO 2020-02-08 19:15:20,550 basehttp 124 "GET /image_codes/2b077eb9-21c2-4e01-ae2e-c7874759bbf4/ HTTP/1.1" 200 2931
+INFO 2020-02-08 19:15:21,374 basehttp 124 "GET /image_codes/de27b498-b3cc-4e80-93d5-29625e8fd169/ HTTP/1.1" 200 3154
+WARNING 2020-02-08 19:15:24,759 base 152 Not Found: /mobiles/17719715757/count/
+WARNING 2020-02-08 19:15:24,760 basehttp 124 "GET /mobiles/17719715757/count/ HTTP/1.1" 404 2393
+WARNING 2020-02-08 19:21:07,102 base 152 Not Found: /
+WARNING 2020-02-08 19:21:07,103 basehttp 124 "GET / HTTP/1.1" 404 2291
+WARNING 2020-02-08 19:21:16,557 base 152 Not Found: /register.html
+WARNING 2020-02-08 19:21:16,558 basehttp 124 "GET /register.html HTTP/1.1" 404 2348
+INFO 2020-02-08 19:21:29,147 basehttp 124 "GET /image_codes/c6ee2c2b-2345-45be-a6b7-ea1d4aff03f0/ HTTP/1.1" 200 3639
+WARNING 2020-02-08 19:21:41,049 base 152 Not Found: /mobiles/17719715757/count/
+WARNING 2020-02-08 19:21:41,050 basehttp 124 "GET /mobiles/17719715757/count/ HTTP/1.1" 404 2393
+WARNING 2020-02-08 19:21:42,368 base 152 Not Found: /mobiles/17719715757/count/
+WARNING 2020-02-08 19:21:42,371 basehttp 124 "GET /mobiles/17719715757/count/ HTTP/1.1" 404 2393
+WARNING 2020-02-08 19:21:42,374 basehttp 124 "GET /sms_codes/17719715757/?text=1111&image_code_id=c6ee2c2b-2345-45be-a6b7-ea1d4aff03f0 HTTP/1.1" 400 46
+INFO 2020-02-08 19:21:42,406 basehttp 124 "GET /image_codes/f58ffd24-b31f-47ca-9b51-4df49a7a616a/ HTTP/1.1" 200 3129
+WARNING 2020-02-08 19:22:02,122 base 152 Not Found: /mobiles/17719715757/count/
+WARNING 2020-02-08 19:22:02,125 basehttp 124 "GET /mobiles/17719715757/count/ HTTP/1.1" 404 2393
+INFO 2020-02-08 19:22:02,364 views 52 发送短信验证码正常[mobile:17719715757]
+INFO 2020-02-08 19:22:02,365 basehttp 124 "GET /sms_codes/17719715757/?text=vlnc&image_code_id=f58ffd24-b31f-47ca-9b51-4df49a7a616a HTTP/1.1" 200 16
+INFO 2020-02-09 15:37:46,334 basehttp 124 "GET /image_codes/f7ea5106-00b0-4216-8855-6ccee69f9635/ HTTP/1.1" 200 3456
+WARNING 2020-02-09 15:37:48,476 base 152 Not Found: /mobiles/17719715757/count/
+WARNING 2020-02-09 15:37:48,477 basehttp 124 "GET /mobiles/17719715757/count/ HTTP/1.1" 404 2393
+WARNING 2020-02-09 15:37:50,992 base 152 Not Found: /mobiles/17719715757/count/
+WARNING 2020-02-09 15:37:50,995 basehttp 124 "GET /mobiles/17719715757/count/ HTTP/1.1" 404 2393
+INFO 2020-02-09 15:37:51,066 basehttp 124 "GET /sms_codes/17719715757/?text=rwfk&image_code_id=f7ea5106-00b0-4216-8855-6ccee69f9635 HTTP/1.1" 200 16
+INFO 2020-02-09 15:37:51,290 tasks 17 发送短信验证码正常[mobile:17719715757]
