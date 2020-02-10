@@ -363,3 +363,22 @@ INFO 2020-02-09 17:31:38,274 tasks 17 发送短信验证码正常[mobile:1771971
 INFO 2020-02-09 17:31:48,426 basehttp 124 "GET /mobiles/17719715757/count/ HTTP/1.1" 200 34
 INFO 2020-02-09 17:31:48,431 basehttp 124 "GET /usernames/jillhero/count/ HTTP/1.1" 200 33
 INFO 2020-02-09 17:31:48,507 basehttp 124 "POST /users/ HTTP/1.1" 201 53
+INFO 2020-02-09 19:41:05,295 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2020-02-09 19:41:05,371 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2020-02-09 19:41:13,092 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2020-02-09 19:41:13,108 base 152 Not Found: /user/
+WARNING 2020-02-09 19:41:13,109 basehttp 124 "GET /user/ HTTP/1.1" 404 3042
+WARNING 2020-02-09 19:41:16,961 base 152 Not Found: /user/
+WARNING 2020-02-09 19:41:16,961 basehttp 124 "GET /user/ HTTP/1.1" 404 3042
+WARNING 2020-02-09 19:41:19,238 base 152 Not Found: /areas/
+WARNING 2020-02-09 19:41:19,240 basehttp 124 "GET /areas/ HTTP/1.1" 404 3045
+INFO 2020-02-09 19:41:19,241 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+WARNING 2020-02-09 19:41:19,255 base 152 Not Found: /addresses/
+WARNING 2020-02-09 19:41:19,256 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3057
+WARNING 2020-02-09 19:41:22,877 base 152 Not Found: /user/
+WARNING 2020-02-09 19:41:22,878 basehttp 124 "GET /user/ HTTP/1.1" 404 3042
+WARNING 2020-02-09 19:41:34,221 base 152 Not Found: /areas/
+WARNING 2020-02-09 19:41:34,224 base 152 Not Found: /addresses/
+WARNING 2020-02-09 19:41:34,224 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3057
+WARNING 2020-02-09 19:41:34,225 basehttp 124 "GET /areas/ HTTP/1.1" 404 3045
+INFO 2020-02-10 18:01:27,847 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
