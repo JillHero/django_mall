@@ -382,3 +382,437 @@ WARNING 2020-02-09 19:41:34,224 base 152 Not Found: /addresses/
 WARNING 2020-02-09 19:41:34,224 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3057
 WARNING 2020-02-09 19:41:34,225 basehttp 124 "GET /areas/ HTTP/1.1" 404 3045
 INFO 2020-02-10 18:01:27,847 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+WARNING 2020-02-10 20:09:01,334 base 152 Not Found: /
+WARNING 2020-02-10 20:09:01,335 basehttp 124 "GET / HTTP/1.1" 404 3110
+WARNING 2020-02-10 20:09:01,550 base 152 Not Found: /favicon.ico
+WARNING 2020-02-10 20:09:01,551 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3161
+WARNING 2020-02-10 20:09:34,405 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 20:09:34,405 basehttp 124 "GET /oauth/qq/user/?code=E99B117C701676CE5526A8C5BB3208B5 HTTP/1.1" 404 3280
+INFO 2020-02-10 20:11:54,970 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+WARNING 2020-02-10 20:17:18,457 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 20:17:18,458 basehttp 124 "GET /oauth/qq/user/?code=839CFCBD53259539F40F6AA630E0EEFC HTTP/1.1" 404 3280
+INFO 2020-02-10 20:20:32,325 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+WARNING 2020-02-10 20:20:43,493 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 20:20:43,494 basehttp 124 "GET /oauth/qq/user/?code=3A08EC6C2B9ECE6B7A82A24275D10675 HTTP/1.1" 404 3280
+WARNING 2020-02-10 20:23:54,382 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 20:23:54,383 basehttp 124 "GET /oauth/qq/user/?code=9E33ADB6420774BBFCAF9277843FEA71 HTTP/1.1" 404 3280
+INFO 2020-02-10 20:24:07,515 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+WARNING 2020-02-10 20:24:15,594 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 20:24:15,594 basehttp 124 "GET /oauth/qq/user/?code=000F3F614AE4CF4336703BFD3D266F5F HTTP/1.1" 404 3280
+WARNING 2020-02-10 20:27:31,442 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 20:27:31,443 basehttp 124 "GET /oauth/qq/user/?code=B61E572C055614C5BA24D5641EE93FEA HTTP/1.1" 404 3280
+INFO 2020-02-10 20:34:40,936 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+WARNING 2020-02-10 20:34:52,245 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 20:34:52,246 basehttp 124 "GET /oauth/qq/user/?code=B05D5A21D1E66CFFEFABE57182342F99 HTTP/1.1" 404 3280
+WARNING 2020-02-10 20:42:18,020 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 20:42:18,021 basehttp 124 "GET /oauth/qq/user/?code=A971575C5831B0CC4A5F6761981A8C2C HTTP/1.1" 404 3280
+WARNING 2020-02-10 20:46:42,843 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 20:46:42,844 basehttp 124 "GET /oauth/qq/user/?code=35B87917A351639B1099BF3DC2AD4F78 HTTP/1.1" 404 3280
+INFO 2020-02-10 20:48:13,178 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+WARNING 2020-02-10 20:48:21,602 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 20:48:21,602 basehttp 124 "GET /oauth/qq/user/?code=15B2F636C78F1113ED8110AB5AFDAF9C HTTP/1.1" 404 3280
+INFO 2020-02-10 20:50:13,351 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+WARNING 2020-02-10 20:50:21,685 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 20:50:21,685 basehttp 124 "GET /oauth/qq/user/?code=3C60F8B730522F878A5F1D7FC68869E8 HTTP/1.1" 404 3280
+INFO 2020-02-10 20:59:09,006 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+WARNING 2020-02-10 20:59:20,119 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 20:59:20,119 basehttp 124 "GET /oauth/qq/user/?code=DA42CE0C268A537834B44CD9A483D36A HTTP/1.1" 404 3280
+INFO 2020-02-10 21:02:54,248 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+WARNING 2020-02-10 21:03:11,337 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 21:03:11,338 basehttp 124 "GET /oauth/qq/user/?code=90C982BC9C9D8D3320713B04E2817F50 HTTP/1.1" 404 3280
+INFO 2020-02-10 21:04:13,700 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+WARNING 2020-02-10 21:04:58,084 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-10 21:04:58,085 basehttp 124 "GET /oauth/qq/user/?code=7D02D03C769BBEFA01D7E3C023FAC9DD HTTP/1.1" 404 3280
+INFO 2020-02-11 14:47:58,302 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+WARNING 2020-02-11 14:49:57,520 base 152 Not Found: /oauth/qq/user/
+WARNING 2020-02-11 14:49:57,522 basehttp 124 "GET /oauth/qq/user/?code=D5B0E13278E3E5F9F90CD1538A29287F HTTP/1.1" 404 3280
+INFO 2020-02-11 14:51:52,961 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+ERROR 2020-02-11 14:52:19,650 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 39, in get
+    oauth_qq_user = OAuthQQUser.objects.get(openid=openid)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+oauth.models.DoesNotExist: OAuthQQUser matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 40, in get
+    except OAuthAPIError.DoesNotExist:
+AttributeError: type object 'OAuthAPIError' has no attribute 'DoesNotExist'
+ERROR 2020-02-11 14:52:19,824 basehttp 124 "GET /oauth/qq/user/?code=BB1485F510D874D03FA93477872DB275 HTTP/1.1" 500 19499
+INFO 2020-02-11 14:53:02,971 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+ERROR 2020-02-11 14:53:11,147 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 39, in get
+    oauth_qq_user = OAuthQQUser.objects.get(openid=openid)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+oauth.models.DoesNotExist: OAuthQQUser matching query does not exist.
+ERROR 2020-02-11 14:53:11,245 basehttp 124 "GET /oauth/qq/user/?code=B20E19B5DF8B391C6122362336B47BA7 HTTP/1.1" 500 19192
+INFO 2020-02-11 14:58:39,247 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+ERROR 2020-02-11 14:59:50,249 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 39, in get
+    oauth_qq_user = OAuthQQUser.objects.get(openid=openid)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+oauth.models.DoesNotExist: OAuthQQUser matching query does not exist.
+ERROR 2020-02-11 14:59:50,320 basehttp 124 "GET /oauth/qq/user/?code=F98F99AC4B4472B5A46B53B41D9A2760 HTTP/1.1" 500 19192
+INFO 2020-02-11 15:00:59,857 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2020-02-11 15:01:04,599 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+ERROR 2020-02-11 15:02:00,512 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 39, in get
+    oauth_qq_user = OAuthQQUser.objects.get(openid=openid)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+oauth.models.DoesNotExist: OAuthQQUser matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 40, in get
+    except OAuthAPIError.DoesNotExist:
+AttributeError: type object 'OAuthAPIError' has no attribute 'DoesNotExist'
+ERROR 2020-02-11 15:02:01,205 basehttp 124 "GET /oauth/qq/user/?code=98FF560857552CF8D442EFAC9ACC6591 HTTP/1.1" 500 19499
+INFO 2020-02-11 15:04:39,793 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+INFO 2020-02-11 15:05:02,330 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+ERROR 2020-02-11 15:05:21,953 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 39, in get
+    oauth_qq_user = OAuthQQUser.objects.get(openid=openid)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+oauth.models.DoesNotExist: OAuthQQUser matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 40, in get
+    except OAuthAPIError.DoesNotExist:
+AttributeError: type object 'OAuthAPIError' has no attribute 'DoesNotExist'
+ERROR 2020-02-11 15:05:22,091 basehttp 124 "GET /oauth/qq/user/?code=02D414DC60BF056637EB21D31CB5200D HTTP/1.1" 500 19505
+INFO 2020-02-11 15:08:53,887 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+INFO 2020-02-11 15:09:11,311 basehttp 124 "GET /oauth/qq/user/?code=DED0233A959CA3D218306039097E1DC5 HTTP/1.1" 200 233
+INFO 2020-02-11 15:09:11,381 basehttp 124 "GET /image_codes/445a0dbd-51b3-4f39-a2b8-ec43b0fb498d/ HTTP/1.1" 200 3487
+WARNING 2020-02-11 17:45:50,728 base 152 Not Found: /
+WARNING 2020-02-11 17:45:50,729 basehttp 124 "GET / HTTP/1.1" 404 3110
+WARNING 2020-02-11 17:45:51,085 base 152 Not Found: /favicon.ico
+WARNING 2020-02-11 17:45:51,085 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3161
+ERROR 2020-02-11 17:46:00,468 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 35, in get
+    access_token = oauth_qq.get_access_token(code)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/utils.py", line 60, in get_access_token
+    return access_token[0]
+TypeError: 'NoneType' object is not subscriptable
+ERROR 2020-02-11 17:46:00,536 basehttp 124 "GET /oauth/qq/user/?code=DED0233A959CA3D218306039097E1DC5 HTTP/1.1" 500 17562
+INFO 2020-02-11 17:46:14,304 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+ERROR 2020-02-11 17:47:37,246 utils 72 获取openid异常[Errno 60] Operation timed out
+ERROR 2020-02-11 17:47:37,255 basehttp 124 "GET /oauth/qq/user/?code=85348DB684097149F4044AE50FDF7B53 HTTP/1.1" 503 34
+INFO 2020-02-11 17:49:27,614 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+INFO 2020-02-11 17:49:39,685 basehttp 124 "GET /oauth/qq/user/?code=25D68C16C4D04DEEE727F89C96712664 HTTP/1.1" 200 233
+INFO 2020-02-11 17:49:39,716 basehttp 124 "GET /image_codes/cba0aa4b-335d-48ed-8f53-c54885074751/ HTTP/1.1" 200 3492
+INFO 2020-02-11 17:49:49,859 basehttp 124 "GET /sms_codes/17719715757/?text=wgfq&image_code_id=cba0aa4b-335d-48ed-8f53-c54885074751 HTTP/1.1" 200 16
+INFO 2020-02-11 17:51:36,841 basehttp 124 "GET /sms_codes/17719715757/?text=wgfq&image_code_id=cba0aa4b-335d-48ed-8f53-c54885074751 HTTP/1.1" 200 16
+INFO 2020-02-11 17:52:26,906 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2020-02-11 17:52:26,916 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 88
+WARNING 2020-02-11 17:52:32,510 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 88
+WARNING 2020-02-11 17:52:48,237 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 400 14175
+INFO 2020-02-11 17:52:48,559 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2020-02-11 17:52:48,560 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2020-02-11 17:52:48,561 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2020-02-11 17:52:48,570 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2020-02-11 17:52:48,583 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2020-02-11 17:52:48,584 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2020-02-11 17:52:48,586 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2020-02-11 17:52:48,587 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2020-02-11 17:52:48,588 basehttp 124 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+INFO 2020-02-11 17:52:48,590 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2020-02-11 17:52:48,619 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2020-02-11 17:52:49,122 base 152 Not Found: /favicon.ico
+WARNING 2020-02-11 17:52:49,123 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3167
+ERROR 2020-02-11 17:57:40,261 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 35, in get
+    access_token = oauth_qq.get_access_token(code)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/utils.py", line 61, in get_access_token
+    return access_token[0]
+TypeError: 'NoneType' object is not subscriptable
+ERROR 2020-02-11 17:57:40,387 basehttp 124 "GET /oauth/qq/user/?code=25D68C16C4D04DEEE727F89C96712664 HTTP/1.1" 500 19009
+INFO 2020-02-11 17:58:18,254 basehttp 124 "GET /oauth/qq/user/?code=D3BD82A3BB232AA42847C9615363C3DE HTTP/1.1" 200 233
+INFO 2020-02-11 17:58:18,344 basehttp 124 "GET /image_codes/ced8c84a-6f93-43da-85c2-3f5180f4ab00/ HTTP/1.1" 200 3014
+INFO 2020-02-11 17:58:29,787 basehttp 124 "GET /sms_codes/17719715757/?text=fmwj&image_code_id=ced8c84a-6f93-43da-85c2-3f5180f4ab00 HTTP/1.1" 200 16
+WARNING 2020-02-11 17:58:40,176 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 88
+INFO 2020-02-11 18:04:25,001 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+INFO 2020-02-11 18:04:34,196 basehttp 124 "GET /oauth/qq/user/?code=4F574A56EFB933823484DE496B17D458 HTTP/1.1" 200 233
+INFO 2020-02-11 18:04:34,229 basehttp 124 "GET /image_codes/7be4ff9e-30c6-4019-80d3-e961fcf129dc/ HTTP/1.1" 200 3201
+INFO 2020-02-11 18:04:42,808 basehttp 124 "GET /sms_codes/17719715757/?text=oiq9&image_code_id=7be4ff9e-30c6-4019-80d3-e961fcf129dc HTTP/1.1" 200 16
+WARNING 2020-02-11 18:04:51,317 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 41
+INFO 2020-02-11 18:06:03,080 basehttp 124 "GET /oauth/qq/user/?code=F24CB9C3A7891C0328772E8113B6B6E2 HTTP/1.1" 200 233
+INFO 2020-02-11 18:06:03,110 basehttp 124 "GET /image_codes/d04d30ae-db5f-4669-91da-f0736021a641/ HTTP/1.1" 200 3111
+WARNING 2020-02-11 18:06:12,309 basehttp 124 "GET /sms_codes/17719715757/?text=liqb&image_code_id=d04d30ae-db5f-4669-91da-f0736021a641 HTTP/1.1" 400 46
+INFO 2020-02-11 18:06:13,825 basehttp 124 "GET /image_codes/e67f8795-e27a-48cb-a369-f667d69d76c5/ HTTP/1.1" 200 3426
+INFO 2020-02-11 18:06:17,430 basehttp 124 "GET /sms_codes/17719715757/?text=orrw&image_code_id=e67f8795-e27a-48cb-a369-f667d69d76c5 HTTP/1.1" 200 16
+WARNING 2020-02-11 18:06:25,527 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 46
+ERROR 2020-02-11 18:06:37,221 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 35, in get
+    access_token = oauth_qq.get_access_token(code)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/utils.py", line 61, in get_access_token
+    return access_token[0]
+TypeError: 'NoneType' object is not subscriptable
+ERROR 2020-02-11 18:06:37,290 basehttp 124 "GET /oauth/qq/user/?code=F24CB9C3A7891C0328772E8113B6B6E2 HTTP/1.1" 500 17562
+INFO 2020-02-11 18:06:40,976 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+INFO 2020-02-11 18:06:50,035 basehttp 124 "GET /oauth/qq/user/?code=5D6488B10971BA1E2DD45E248F51A724 HTTP/1.1" 200 233
+INFO 2020-02-11 18:06:50,071 basehttp 124 "GET /image_codes/fb8a18f1-5635-4c14-aeb5-2bbf3fa92412/ HTTP/1.1" 200 2963
+WARNING 2020-02-11 18:07:01,793 basehttp 124 "GET /sms_codes/17719715757/?text=ucic&image_code_id=fb8a18f1-5635-4c14-aeb5-2bbf3fa92412 HTTP/1.1" 400 49
+INFO 2020-02-11 18:07:04,713 basehttp 124 "GET /image_codes/c4937d50-6ef1-4df2-a430-8718cf1676c2/ HTTP/1.1" 200 3434
+WARNING 2020-02-11 18:07:09,456 basehttp 124 "GET /sms_codes/17719715757/?text=o5te&image_code_id=c4937d50-6ef1-4df2-a430-8718cf1676c2 HTTP/1.1" 400 49
+WARNING 2020-02-11 18:07:10,521 basehttp 124 "GET /sms_codes/17719715757/?text=o5te&image_code_id=c4937d50-6ef1-4df2-a430-8718cf1676c2 HTTP/1.1" 400 49
+INFO 2020-02-11 18:07:11,117 basehttp 124 "GET /image_codes/f11a8ed6-c35f-4180-bf3c-ef4b916febb3/ HTTP/1.1" 200 3352
+WARNING 2020-02-11 18:07:14,529 basehttp 124 "GET /sms_codes/17719715757/?text=orgz&image_code_id=f11a8ed6-c35f-4180-bf3c-ef4b916febb3 HTTP/1.1" 400 49
+WARNING 2020-02-11 18:07:15,138 basehttp 124 "GET /sms_codes/17719715757/?text=orgz&image_code_id=f11a8ed6-c35f-4180-bf3c-ef4b916febb3 HTTP/1.1" 400 49
+WARNING 2020-02-11 18:07:15,315 basehttp 124 "GET /sms_codes/17719715757/?text=orgz&image_code_id=f11a8ed6-c35f-4180-bf3c-ef4b916febb3 HTTP/1.1" 400 49
+ERROR 2020-02-11 18:07:16,622 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 35, in get
+    access_token = oauth_qq.get_access_token(code)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/utils.py", line 61, in get_access_token
+    return access_token[0]
+TypeError: 'NoneType' object is not subscriptable
+ERROR 2020-02-11 18:07:16,640 basehttp 124 "GET /oauth/qq/user/?code=5D6488B10971BA1E2DD45E248F51A724 HTTP/1.1" 500 17562
+INFO 2020-02-11 18:07:29,963 basehttp 124 "GET /oauth/qq/user/?code=24BA279D855D51EC4504660B0557E6B4 HTTP/1.1" 200 233
+INFO 2020-02-11 18:07:29,994 basehttp 124 "GET /image_codes/6f6bb969-2d0e-41a6-bd09-b51541a309d7/ HTTP/1.1" 200 3276
+INFO 2020-02-11 18:07:37,558 basehttp 124 "GET /sms_codes/17719715757/?text=sh3a&image_code_id=6f6bb969-2d0e-41a6-bd09-b51541a309d7 HTTP/1.1" 200 16
+WARNING 2020-02-11 18:07:45,986 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 46
+ERROR 2020-02-11 18:08:42,721 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/views.py", line 35, in get
+    access_token = oauth_qq.get_access_token(code)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/oauth/utils.py", line 61, in get_access_token
+    return access_token[0]
+TypeError: 'NoneType' object is not subscriptable
+ERROR 2020-02-11 18:08:42,787 basehttp 124 "GET /oauth/qq/user/?code=24BA279D855D51EC4504660B0557E6B4 HTTP/1.1" 500 17562
+INFO 2020-02-11 18:08:54,172 basehttp 124 "GET /oauth/qq/user/?code=5FA94C827D282960072CBFB7C1E5D8B1 HTTP/1.1" 200 233
+INFO 2020-02-11 18:08:54,202 basehttp 124 "GET /image_codes/02f34cf4-d0c5-4734-9f47-c579ec1f1cf0/ HTTP/1.1" 200 3007
+INFO 2020-02-11 18:09:01,829 basehttp 124 "GET /sms_codes/17719715757/?text=9y4e&image_code_id=02f34cf4-d0c5-4734-9f47-c579ec1f1cf0 HTTP/1.1" 200 16
+WARNING 2020-02-11 18:09:09,601 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 46
+WARNING 2020-02-11 18:09:22,604 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 46
+WARNING 2020-02-11 18:09:23,548 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 46
+INFO 2020-02-11 18:10:16,194 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 181
+INFO 2020-02-11 18:10:24,854 basehttp 124 "GET /oauth/qq/user/?code=3BC255E8F4B2E5577BB47D5F60F2617C HTTP/1.1" 200 233
+INFO 2020-02-11 18:10:24,882 basehttp 124 "GET /image_codes/20994f2f-4fb6-4143-a87c-a38a9babd442/ HTTP/1.1" 200 3178
+INFO 2020-02-11 18:10:34,997 basehttp 124 "GET /image_codes/c555bb51-cb22-4802-b51d-0b3833b1355b/ HTTP/1.1" 200 2887
+INFO 2020-02-11 18:10:38,799 basehttp 124 "GET /sms_codes/17719715757/?text=kjti&image_code_id=c555bb51-cb22-4802-b51d-0b3833b1355b HTTP/1.1" 200 16
+WARNING 2020-02-11 18:10:48,203 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 46
+INFO 2020-02-11 18:12:01,375 basehttp 124 "GET /oauth/qq/user/?code=89E2B21148FA935BA112ED7459418596 HTTP/1.1" 200 233
+INFO 2020-02-11 18:12:01,407 basehttp 124 "GET /image_codes/5ae54aab-570e-4c91-b424-326fc43b02a3/ HTTP/1.1" 200 3764
+INFO 2020-02-11 18:12:09,383 basehttp 124 "GET /image_codes/0a6aab87-db93-4928-8f68-75d0acad3494/ HTTP/1.1" 200 3157
+INFO 2020-02-11 18:12:10,521 basehttp 124 "GET /image_codes/d57b76ab-d0a9-49dc-ac9e-1ddf8856b0ea/ HTTP/1.1" 200 3067
+INFO 2020-02-11 18:12:14,166 basehttp 124 "GET /sms_codes/17719715757/?text=8xnu&image_code_id=d57b76ab-d0a9-49dc-ac9e-1ddf8856b0ea HTTP/1.1" 200 16
+INFO 2020-02-11 18:12:20,548 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 201 229
+INFO 2020-02-11 18:16:14,760 basehttp 124 "GET /image_codes/f25bb32e-63a7-4915-911d-06b20fbfe531/ HTTP/1.1" 200 3089
+INFO 2020-02-11 18:16:36,134 basehttp 124 "GET /oauth/qq/user/?code=9B39568EF142DB0B2B77352DA785A364 HTTP/1.1" 200 211
+INFO 2020-02-11 18:19:01,588 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2020-02-11 18:19:01,666 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2020-02-11 18:19:01,921 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2020-02-11 18:19:01,933 base 152 Not Found: /user/
+WARNING 2020-02-11 18:19:01,935 basehttp 124 "GET /user/ HTTP/1.1" 404 3149
+WARNING 2020-02-11 18:19:06,394 base 152 Not Found: /areas/
+WARNING 2020-02-11 18:19:06,395 basehttp 124 "GET /areas/ HTTP/1.1" 404 3152
+INFO 2020-02-11 18:19:06,398 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+WARNING 2020-02-11 18:19:06,464 base 152 Not Found: /addresses/
+WARNING 2020-02-11 18:19:06,464 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3164
