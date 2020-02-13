@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'corsheaders',  # 解决跨域请求
     'users.apps.UsersConfig',
     'verifications.apps.VerificationsConfig',
-    'oauth.apps.OauthConfig'
+    'oauth.apps.OauthConfig',
+    'areas.apps.AreasConfig'
 ]
 
 MIDDLEWARE = [
