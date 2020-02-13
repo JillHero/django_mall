@@ -2,6 +2,9 @@ from django.db import models
 
 
 # Create your models here.
+from mall.utils.models import BaseModel
+from users.models import User
+
 
 class Area(models.Model):
     name = models.CharField(max_length=20, verbose_name="名称")
@@ -15,3 +18,5 @@ class Area(models.Model):
 
     def __str__(self):
         return self.name
+
+

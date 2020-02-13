@@ -1082,3 +1082,1203 @@ WARNING 2020-02-13 15:54:21,441 basehttp 124 "GET /browse_histories/ HTTP/1.1" 4
 INFO 2020-02-13 15:54:26,424 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
 INFO 2020-02-13 15:54:26,506 basehttp 124 "PUT /emails/ HTTP/1.1" 200 42
 INFO 2020-02-13 16:19:41,788 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4MTU4MDQ2NiwiZXhwIjoxNTgxNjY2ODY2fQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6ImxvdmVyamlsbGhlcm9AZ21haWwuY29tIn0.0DleBeXXKbUdQwmvdOvHjv0vCz7jXzt0Nt6VMN7GTFKSIN3LUvHa6JjjfgLCtaEylofOUjUX3nEO8TzSxTd6Fg HTTP/1.1" 200 16
+INFO 2020-02-13 17:53:33,186 basehttp 124 "GET /areas HTTP/1.1" 301 0
+ERROR 2020-02-13 17:53:33,212 exception 135 Internal Server Error: /areas/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/areas/views.py", line 15, in get
+    return Response(s.data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2020-02-13 17:53:33,321 basehttp 124 "GET /areas/ HTTP/1.1" 500 95816
+WARNING 2020-02-13 17:53:33,714 base 152 Not Found: /favicon.ico
+WARNING 2020-02-13 17:53:33,715 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3972
+WARNING 2020-02-13 17:53:35,412 base 152 Not Found: /areas//
+WARNING 2020-02-13 17:53:35,412 basehttp 124 "GET /areas// HTTP/1.1" 404 3960
+ERROR 2020-02-13 17:53:38,274 exception 135 Internal Server Error: /areas/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/areas/views.py", line 15, in get
+    return Response(s.data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2020-02-13 17:53:38,325 basehttp 124 "GET /areas/ HTTP/1.1" 500 95816
+INFO 2020-02-13 17:55:09,634 basehttp 124 "GET /areas/ HTTP/1.1" 200 12741
+INFO 2020-02-13 17:55:09,697 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2020-02-13 17:55:09,698 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2020-02-13 17:55:09,701 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2020-02-13 17:55:09,701 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2020-02-13 17:55:09,703 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2020-02-13 17:55:09,706 basehttp 124 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+INFO 2020-02-13 17:55:09,713 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2020-02-13 17:55:09,715 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2020-02-13 17:55:09,715 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2020-02-13 17:55:09,716 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2020-02-13 17:55:09,735 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2020-02-13 17:55:22,649 base 152 Not Found: /areas/610000/
+WARNING 2020-02-13 17:55:22,649 basehttp 124 "GET /areas/610000/ HTTP/1.1" 404 3978
+WARNING 2020-02-13 17:55:26,247 base 152 Not Found: /areas/610000
+WARNING 2020-02-13 17:55:26,247 basehttp 124 "GET /areas/610000 HTTP/1.1" 404 3975
+INFO 2020-02-13 17:56:50,147 basehttp 124 "GET /areas/610000 HTTP/1.1" 301 0
+INFO 2020-02-13 17:56:50,200 basehttp 124 "GET /areas/610000/ HTTP/1.1" 200 9732
+INFO 2020-02-13 18:00:21,355 basehttp 124 "GET /areas/610000/ HTTP/1.1" 200 10852
+ERROR 2020-02-13 18:16:11,402 exception 135 Internal Server Error: /areas/610000/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 680, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 413, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type property is not JSON serializable
+ERROR 2020-02-13 18:16:11,525 basehttp 124 "GET /areas/610000/ HTTP/1.1" 500 123464
+ERROR 2020-02-13 18:16:11,901 exception 135 Internal Server Error: /areas/610000/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 680, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 413, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type property is not JSON serializable
+ERROR 2020-02-13 18:16:11,956 basehttp 124 "GET /areas/610000/ HTTP/1.1" 500 123464
+ERROR 2020-02-13 18:16:12,734 exception 135 Internal Server Error: /areas/610000/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 680, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 413, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type property is not JSON serializable
+ERROR 2020-02-13 18:16:12,783 basehttp 124 "GET /areas/610000/ HTTP/1.1" 500 123464
+ERROR 2020-02-13 18:16:56,442 exception 135 Internal Server Error: /areas/610000/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/usr/local/lib/python3.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 680, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 413, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type property is not JSON serializable
+ERROR 2020-02-13 18:16:56,502 basehttp 124 "GET /areas/610000/ HTTP/1.1" 500 123464
+INFO 2020-02-13 18:16:58,942 basehttp 124 "GET /areas/610000/ HTTP/1.1" 200 10857
+INFO 2020-02-13 18:23:30,156 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2020-02-13 18:23:30,173 basehttp 124 "GET /user/ HTTP/1.1" 200 110
+INFO 2020-02-13 18:23:30,210 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2020-02-13 18:23:30,221 base 152 Not Found: /browse_histories/
+WARNING 2020-02-13 18:23:30,222 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3996
+INFO 2020-02-13 18:23:32,148 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2020-02-13 18:23:32,156 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+WARNING 2020-02-13 18:23:32,178 base 152 Not Found: /addresses/
+WARNING 2020-02-13 18:23:32,180 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3975
+INFO 2020-02-13 18:23:35,477 basehttp 124 "GET /areas/110000/ HTTP/1.1" 200 88
+INFO 2020-02-13 18:23:36,404 basehttp 124 "GET /areas/110100/ HTTP/1.1" 200 591
+INFO 2020-02-13 18:23:39,522 basehttp 124 "GET /areas/530000/ HTTP/1.1" 200 712
+INFO 2020-02-13 18:23:42,307 basehttp 124 "GET /areas/610000/ HTTP/1.1" 200 385
+INFO 2020-02-13 18:23:44,236 basehttp 124 "GET /areas/610300/ HTTP/1.1" 200 444
+INFO 2020-02-13 18:23:48,294 basehttp 124 "GET /areas/610700/ HTTP/1.1" 200 414
+INFO 2020-02-13 20:26:13,234 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2020-02-13 20:26:13,258 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+WARNING 2020-02-13 20:26:13,286 base 152 Not Found: /addresses/
+WARNING 2020-02-13 20:26:13,287 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3975
+WARNING 2020-02-13 20:26:13,411 base 152 Not Found: /addresses/
+INFO 2020-02-13 20:26:13,412 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+WARNING 2020-02-13 20:26:13,412 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3975
+INFO 2020-02-13 20:26:19,541 basehttp 124 "GET /areas/150000/ HTTP/1.1" 200 499
+INFO 2020-02-13 20:27:59,803 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:27:59,806 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:27:59,904 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:28:01,222 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:28:01,230 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:28:01,267 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:28:03,897 basehttp 124 "GET /areas/110000/ HTTP/1.1" 200 88
+INFO 2020-02-13 20:28:16,841 basehttp 124 "GET /areas/110100/ HTTP/1.1" 200 591
+ERROR 2020-02-13 20:28:22,947 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 84, in create
+    count = request.user.addressed.count()
+AttributeError: 'User' object has no attribute 'addressed'
+ERROR 2020-02-13 20:28:22,962 basehttp 124 "POST /addresses/ HTTP/1.1" 500 17680
+INFO 2020-02-13 20:29:14,676 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:29:14,677 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:29:14,767 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:29:15,462 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:29:15,472 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:29:15,506 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:29:17,681 basehttp 124 "GET /areas/110000/ HTTP/1.1" 200 88
+INFO 2020-02-13 20:29:21,508 basehttp 124 "GET /areas/110100/ HTTP/1.1" 200 591
+ERROR 2020-02-13 20:29:31,199 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 87, in create
+    return super(AddressViewSet, self).create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 486, in to_internal_value
+    for field in fields:
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 369, in _writable_fields
+    for field in self.fields.values():
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1038, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1115, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: ("Creating a ModelSerializer without either the 'fields' attribute or the 'exclude' attribute has been deprecated since 3.3.0, and is now disallowed. Add an explicit fields = '__all__' to the UserAddressSerializer serializer.",)
+ERROR 2020-02-13 20:29:31,226 basehttp 124 "POST /addresses/ HTTP/1.1" 500 19450
+INFO 2020-02-13 20:30:33,027 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:30:33,029 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+INFO 2020-02-13 20:30:33,208 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:30:33,219 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:30:33,256 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:30:35,671 basehttp 124 "GET /areas/110000/ HTTP/1.1" 200 88
+INFO 2020-02-13 20:30:38,100 basehttp 124 "GET /areas/110100/ HTTP/1.1" 200 591
+ERROR 2020-02-13 20:30:44,175 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 87, in create
+    return super(AddressViewSet, self).create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 486, in to_internal_value
+    for field in fields:
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 369, in _writable_fields
+    for field in self.fields.values():
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1038, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1166, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'is_delete' was included on serializer UserAddressSerializer in the 'exclude' option, but does not match any model field.
+ERROR 2020-02-13 20:30:44,199 basehttp 124 "POST /addresses/ HTTP/1.1" 500 19264
+ERROR 2020-02-13 20:33:57,828 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+INFO 2020-02-13 20:33:57,850 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:33:57,936 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:33:58,365 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:33:58,370 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:33:58,404 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:33:58,806 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:33:58,818 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:33:58,850 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:34:04,604 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:34:04,613 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:34:04,647 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:34:23,724 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:34:23,730 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:34:23,830 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:37:58,363 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:37:58,364 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:37:58,452 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:38:01,743 basehttp 124 "GET /areas/150000/ HTTP/1.1" 200 499
+INFO 2020-02-13 20:38:10,068 basehttp 124 "GET /areas/150500/ HTTP/1.1" 200 357
+ERROR 2020-02-13 20:38:11,619 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 87, in create
+    return super(AddressViewSet, self).create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 486, in to_internal_value
+    for field in fields:
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 369, in _writable_fields
+    for field in self.fields.values():
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1038, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1166, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'is_delete' was included on serializer UserAddressSerializer in the 'exclude' option, but does not match any model field.
+ERROR 2020-02-13 20:38:11,645 basehttp 124 "POST /addresses/ HTTP/1.1" 500 19264
+INFO 2020-02-13 20:40:40,605 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:40:40,612 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:40:40,661 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:40:45,725 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:40:45,729 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:40:45,815 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:40:48,660 basehttp 124 "GET /areas/130000/ HTTP/1.1" 200 464
+INFO 2020-02-13 20:40:51,278 basehttp 124 "GET /areas/130400/ HTTP/1.1" 200 659
+ERROR 2020-02-13 20:41:04,042 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 87, in create
+    return super(AddressViewSet, self).create(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 486, in to_internal_value
+    for field in fields:
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 369, in _writable_fields
+    for field in self.fields.values():
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1038, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1166, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'is_delete' was included on serializer UserAddressSerializer in the 'exclude' option, but does not match any model field.
+ERROR 2020-02-13 20:41:04,068 basehttp 124 "POST /addresses/ HTTP/1.1" 500 19264
+INFO 2020-02-13 20:41:55,101 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:41:55,105 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:41:55,189 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19528
+INFO 2020-02-13 20:41:58,820 basehttp 124 "GET /areas/210000/ HTTP/1.1" 200 506
+INFO 2020-02-13 20:42:00,848 basehttp 124 "GET /areas/210500/ HTTP/1.1" 200 263
+WARNING 2020-02-13 20:42:06,565 basehttp 124 "POST /addresses/ HTTP/1.1" 400 39
+INFO 2020-02-13 20:43:44,351 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:43:44,368 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_deleted=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+INFO 2020-02-13 20:43:44,524 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2020-02-13 20:43:44,539 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 90, in list
+    queryset = self.get_queryset()
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 81, in get_queryset
+    return self.request.user.addresses.filter(is_deleted=False)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2020-02-13 20:43:44,607 basehttp 124 "GET /addresses/ HTTP/1.1" 500 19529
+INFO 2020-02-13 20:43:48,973 basehttp 124 "GET /addresses/ HTTP/1.1" 200 64
+INFO 2020-02-13 20:43:48,975 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2020-02-13 20:43:54,487 basehttp 124 "GET /areas/140000/ HTTP/1.1" 200 404
+INFO 2020-02-13 20:43:55,483 basehttp 124 "GET /areas/140500/ HTTP/1.1" 200 236
+WARNING 2020-02-13 20:44:00,508 basehttp 124 "POST /addresses/ HTTP/1.1" 400 39
+WARNING 2020-02-13 20:44:22,364 basehttp 124 "POST /addresses/ HTTP/1.1" 400 39
+WARNING 2020-02-13 20:44:22,554 basehttp 124 "POST /addresses/ HTTP/1.1" 400 39
+WARNING 2020-02-13 20:44:22,728 basehttp 124 "POST /addresses/ HTTP/1.1" 400 39
+INFO 2020-02-13 20:47:05,688 basehttp 124 "GET /addresses/ HTTP/1.1" 200 64
+INFO 2020-02-13 20:47:05,690 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2020-02-13 20:47:05,873 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2020-02-13 20:47:06,033 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2020-02-13 20:47:06,046 basehttp 124 "GET /addresses/ HTTP/1.1" 200 64
+INFO 2020-02-13 20:47:09,514 basehttp 124 "GET /areas/220000/ HTTP/1.1" 200 353
+INFO 2020-02-13 20:47:10,705 basehttp 124 "GET /areas/220400/ HTTP/1.1" 200 173
+WARNING 2020-02-13 20:47:14,840 basehttp 124 "POST /addresses/ HTTP/1.1" 400 39
+WARNING 2020-02-13 20:48:14,260 basehttp 124 "POST /addresses/ HTTP/1.1" 400 39
+WARNING 2020-02-13 20:48:22,056 basehttp 124 "POST /addresses/ HTTP/1.1" 400 39
+INFO 2020-02-13 20:50:32,536 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2020-02-13 20:50:32,539 basehttp 124 "GET /addresses/ HTTP/1.1" 200 65
+INFO 2020-02-13 20:50:36,093 basehttp 124 "GET /areas/120000/ HTTP/1.1" 200 74
+INFO 2020-02-13 20:50:38,910 basehttp 124 "GET /areas/120100/ HTTP/1.1" 200 572
+WARNING 2020-02-13 20:51:04,133 basehttp 124 "POST /addresses/ HTTP/1.1" 400 39
+INFO 2020-02-13 20:52:04,591 basehttp 124 "GET /addresses/ HTTP/1.1" 200 65
+INFO 2020-02-13 20:52:04,597 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2020-02-13 20:52:05,127 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2020-02-13 20:52:05,147 basehttp 124 "GET /addresses/ HTTP/1.1" 200 65
+INFO 2020-02-13 20:52:09,282 basehttp 124 "GET /areas/120000/ HTTP/1.1" 200 74
+INFO 2020-02-13 20:52:10,435 basehttp 124 "GET /areas/120100/ HTTP/1.1" 200 572
+INFO 2020-02-13 20:52:15,916 basehttp 124 "POST /addresses/ HTTP/1.1" 201 227
+INFO 2020-02-13 20:52:21,261 basehttp 124 "OPTIONS /addresses/1/title/ HTTP/1.1" 200 0
+INFO 2020-02-13 20:52:21,282 basehttp 124 "PUT /addresses/1/title/ HTTP/1.1" 200 15
+INFO 2020-02-13 20:52:23,511 basehttp 124 "OPTIONS /addresses/1/status/ HTTP/1.1" 200 0
+INFO 2020-02-13 20:52:23,531 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 200 16
