@@ -3,6 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 #  usernames/(?P<username>\w{5,20})/count/
+from django_redis import get_redis_connection
 from rest_framework import status, mixins
 from rest_framework.decorators import action
 from rest_framework.generics import GenericAPIView, CreateAPIView, RetrieveAPIView, UpdateAPIView
@@ -12,10 +13,11 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import GenericViewSet
 
+from goods.models import SKU
 from mall.apps.users import serializers
 from users import constants
 from users.models import User
-from users.serializers import AddressTitleSerializer, UserAddressSerializer
+from users.serializers import AddressTitleSerializer, UserAddressSerializer, AddUserBrowsingHistortSerializer
 
 
 class UsernameCountView(APIView):
@@ -119,3 +121,21 @@ class AddressViewSet(mixins.CreateModelMixin, mixins.UpdateModelMixin, GenericVi
         request.user.default_address = address
         request.user.save()
         return Response({"message": "ok"}, status=status.HTTP_200_OK)
+
+
+class UserBrowsingHistoryView(CreateAPIView):
+    serializer_class = AddUserBrowsingHistortSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        user_id = request.user.id
+        redis_conn = get_redis_connection("history")
+        sku_id_list = redis_conn.lrange("history_%s" % user_id, 0, constants.USER_HISTORY_LIMIT)
+        # sku_object_list = SKU.objects.filter(id__in=sku_id_list)
+        skus = []
+        for sku_id in sku_id_list:
+            sku = SKU.objects.get(id=sku_id)
+            skus.append(sku)
+
+        s = serializers.SKUSerializer(instance=skus, many=True)
+        return Response(s.data, status=status.HTTP_200_OK)

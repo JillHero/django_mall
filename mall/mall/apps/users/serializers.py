@@ -5,6 +5,8 @@ from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 
 from celery_tasks.email.tasks import send_active_email
+from goods.models import SKU
+from users.constants import USER_HISTORY_LIMIT
 from users.models import User, Address
 
 
@@ -108,8 +110,8 @@ class UserAddressSerializer(serializers.ModelSerializer):
         model = Address
         exclude = ("user", "is_deleted", "create_time", "update_time")
 
-    def validate_mobile(self,value):
-        if not re.match(r"1[3-9]\d{9}",value):
+    def validate_mobile(self, value):
+        if not re.match(r"1[3-9]\d{9}", value):
             raise serializers.ValidationError("手机号格式不正确")
         return value
 
@@ -122,3 +124,33 @@ class AddressTitleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Address
         fields = ("title",)
+
+
+class AddUserBrowsingHistortSerializer(serializers.Serializer):
+    sku_id = serializers.IntegerField(label="商品SKU编号", min_value=1)
+
+    def validate_sku_id(self, value):
+        try:
+            SKU.objects.get(id=value)
+        except SKU.DoesNotExist:
+            raise serializers.ValidationError("该商品不存在")
+        return value
+
+    def create(self, validated_data):
+        sku_id = validated_data["sku_id"]
+        user = self.context['request'].user
+        redis_conn = get_redis_connection("history")
+        pl = redis_conn.pipeline()
+        redis_key = "history_%s" % user.id
+
+        pl.lrem(redis_key, 0, sku_id)
+        pl.lpush(redis_key, sku_id)
+        pl.ltrim(redis_key, 0, USER_HISTORY_LIMIT - 1)
+        pl.execute()
+        return validated_data
+
+
+class SKUSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SKU
+        fields = ("id", "name", "price", "default_image_url", "comments")

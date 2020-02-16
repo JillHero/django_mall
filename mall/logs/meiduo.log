@@ -2626,3 +2626,372 @@ WARNING 2020-02-16 18:10:25,450 basehttp 124 "GET /categories/157/hotskus/ HTTP/
 INFO 2020-02-16 18:10:25,533 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
 WARNING 2020-02-16 18:10:25,545 base 152 Not Found: /browse_histories/
 WARNING 2020-02-16 18:10:25,546 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:15:03,192 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:15:03,199 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:15:03,200 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:15:03,200 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:15:03,841 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:15:03,848 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:15:03,849 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:15:03,850 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:20:04,199 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:20:04,217 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:20:04,218 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:20:04,219 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:20:05,502 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:20:05,517 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:20:05,518 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:20:05,520 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:23:58,039 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:23:58,050 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:23:58,051 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:23:58,052 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:25:02,735 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:25:02,741 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:25:02,742 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:25:02,742 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:30:03,134 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:30:03,138 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:30:03,139 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:30:03,140 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:35:05,158 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:35:05,166 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:35:05,167 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:35:05,167 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:07,618 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:07,620 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:07,621 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:07,622 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:08,195 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:08,206 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:08,207 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:08,208 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:08,701 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:08,705 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:08,706 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:08,707 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:09,434 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:09,435 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:09,446 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:09,447 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:10,026 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:10,034 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:10,035 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:10,035 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:10,741 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:10,750 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:10,751 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:10,752 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:11,317 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:11,327 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:11,328 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:11,329 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:12,036 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:12,042 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:12,043 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:12,044 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:12,641 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:12,642 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:12,654 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:12,655 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:13,317 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:13,320 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:13,321 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:13,321 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:13,971 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:13,980 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:13,981 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:13,981 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:14,713 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:14,716 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:14,717 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:14,718 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:15,351 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:15,363 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:15,364 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:15,365 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:16,015 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:16,026 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:16,027 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:16,028 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:16,768 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:16,771 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:16,771 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:16,772 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:39,302 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:39,304 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:39,305 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:39,305 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:43,211 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:43,217 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:37:43,218 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:37:43,218 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:44,106 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:44,106 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:37:46,208 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:37:46,209 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:40:03,994 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:40:03,997 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:40:03,999 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:40:04,000 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:45:05,225 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:45:05,227 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:45:05,237 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:45:05,239 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:50:02,969 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:50:02,970 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:50:02,970 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:50:02,971 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 18:55:03,587 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 18:55:03,590 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 18:55:03,591 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 18:55:03,592 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 19:00:03,813 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 19:00:03,815 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 19:00:03,816 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 19:00:03,818 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 19:01:53,442 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 19:01:53,444 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 19:01:53,448 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 19:01:53,448 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 19:05:03,565 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 19:05:03,576 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 19:05:03,577 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 19:05:03,578 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 19:10:04,742 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 19:10:04,754 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 19:10:04,755 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 19:10:04,756 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 19:10:05,857 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 19:10:05,865 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 19:10:05,866 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 19:10:05,867 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 19:50:02,887 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 19:50:02,903 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 19:50:02,904 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 19:50:02,906 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 19:55:03,512 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 19:55:03,513 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 19:55:03,515 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 19:55:03,515 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 20:05:05,364 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 20:05:05,365 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 20:05:05,368 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 20:05:05,369 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 20:05:05,873 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 20:05:05,883 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 20:05:05,884 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+WARNING 2020-02-16 20:05:05,885 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 20:06:31,216 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 20:06:31,217 base 152 Not Found: /browse_histories/
+WARNING 2020-02-16 20:06:31,218 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6235
+WARNING 2020-02-16 20:06:31,218 basehttp 124 "POST /browse_histories/ HTTP/1.1" 404 6218
+INFO 2020-02-16 20:06:35,637 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2020-02-16 20:06:35,643 basehttp 124 "GET /user/ HTTP/1.1" 401 35
+INFO 2020-02-16 20:13:18,683 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2020-02-16 20:13:18,742 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2020-02-16 20:13:18,900 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2020-02-16 20:13:18,948 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2020-02-16 20:13:18,962 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2020-02-16 20:13:21,205 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2020-02-16 20:13:21,230 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2020-02-16 20:13:21,238 basehttp 124 "GET /addresses/ HTTP/1.1" 200 65
+INFO 2020-02-16 20:13:23,033 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2020-02-16 20:13:23,047 basehttp 124 "GET /addresses/ HTTP/1.1" 200 65
+INFO 2020-02-16 20:13:28,066 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2020-02-16 20:13:28,121 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+WARNING 2020-02-16 20:13:48,353 base 152 Not Found: /categories/157/skus/
+WARNING 2020-02-16 20:13:48,363 base 152 Not Found: /categories/157/
+WARNING 2020-02-16 20:13:48,365 basehttp 124 "GET /categories/157/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 404 6442
+INFO 2020-02-16 20:13:48,371 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2020-02-16 20:13:48,373 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 20:13:48,374 basehttp 124 "GET /categories/157/ HTTP/1.1" 404 6378
+WARNING 2020-02-16 20:13:48,376 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6402
+WARNING 2020-02-16 20:13:48,426 base 152 Not Found: /cart/
+WARNING 2020-02-16 20:13:48,427 basehttp 124 "GET /cart/ HTTP/1.1" 404 6348
+WARNING 2020-02-16 20:13:52,395 base 152 Not Found: /categories/158/skus/
+WARNING 2020-02-16 20:13:52,404 base 152 Not Found: /categories/158/
+WARNING 2020-02-16 20:13:52,412 base 152 Not Found: /cart/
+WARNING 2020-02-16 20:13:52,419 base 152 Not Found: /categories/158/hotskus/
+WARNING 2020-02-16 20:13:52,420 basehttp 124 "GET /categories/158/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 404 6442
+WARNING 2020-02-16 20:13:52,421 basehttp 124 "GET /categories/158/ HTTP/1.1" 404 6378
+WARNING 2020-02-16 20:13:52,422 basehttp 124 "GET /categories/158/hotskus/ HTTP/1.1" 404 6402
+WARNING 2020-02-16 20:13:52,422 basehttp 124 "GET /cart/ HTTP/1.1" 404 6348
+WARNING 2020-02-16 20:14:03,154 base 152 Not Found: /categories/115/skus/
+WARNING 2020-02-16 20:14:03,170 base 152 Not Found: /categories/115/hotskus/
+WARNING 2020-02-16 20:14:03,172 base 152 Not Found: /categories/115/
+WARNING 2020-02-16 20:14:03,174 base 152 Not Found: /cart/
+WARNING 2020-02-16 20:14:03,175 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 404 6442
+WARNING 2020-02-16 20:14:03,176 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6402
+WARNING 2020-02-16 20:14:03,177 basehttp 124 "GET /cart/ HTTP/1.1" 404 6348
+WARNING 2020-02-16 20:14:03,178 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 6378
+WARNING 2020-02-16 20:14:35,188 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 20:14:35,188 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6402
+INFO 2020-02-16 20:14:35,200 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2020-02-16 20:14:41,317 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+ERROR 2020-02-16 20:14:41,381 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 141, in get
+    return Response(s.data, status=status.HTTP_200_OK)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 375, in _readable_fields
+    for field in self.fields.values():
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1063, in get_fields
+    source, info, model, depth
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1208, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1325, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `comment` is not valid for model `SKU`.
+ERROR 2020-02-16 20:14:41,470 basehttp 124 "GET /browse_histories/ HTTP/1.1" 500 20305
+INFO 2020-02-16 20:14:43,685 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+ERROR 2020-02-16 20:14:43,770 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 141, in get
+    return Response(s.data, status=status.HTTP_200_OK)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 375, in _readable_fields
+    for field in self.fields.values():
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1063, in get_fields
+    source, info, model, depth
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1208, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1325, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `comment` is not valid for model `SKU`.
+ERROR 2020-02-16 20:14:43,801 basehttp 124 "GET /browse_histories/ HTTP/1.1" 500 20305
+INFO 2020-02-16 20:15:04,589 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+ERROR 2020-02-16 20:15:04,637 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/users/views.py", line 141, in get
+    return Response(s.data, status=status.HTTP_200_OK)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 375, in _readable_fields
+    for field in self.fields.values():
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1063, in get_fields
+    source, info, model, depth
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1208, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 1325, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `comment` is not valid for model `SKU`.
+ERROR 2020-02-16 20:15:04,680 basehttp 124 "GET /browse_histories/ HTTP/1.1" 500 20305
+INFO 2020-02-16 20:15:55,848 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2020-02-16 20:15:55,912 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 200
+INFO 2020-02-16 20:15:56,971 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2020-02-16 20:15:57,007 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 200
+INFO 2020-02-16 20:15:58,449 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2020-02-16 20:15:58,486 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 200
+INFO 2020-02-16 20:16:05,599 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+WARNING 2020-02-16 20:16:08,702 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 20:16:08,703 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6402
+INFO 2020-02-16 20:16:08,713 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+WARNING 2020-02-16 20:16:09,118 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 20:16:09,120 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6402
+INFO 2020-02-16 20:16:09,131 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2020-02-16 20:16:10,699 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2020-02-16 20:16:10,729 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 200
+INFO 2020-02-16 20:16:22,281 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+WARNING 2020-02-16 20:16:23,684 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 20:16:23,685 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6402
+INFO 2020-02-16 20:16:23,697 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+WARNING 2020-02-16 20:16:24,037 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 20:16:24,042 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6402
+WARNING 2020-02-16 20:16:24,394 base 152 Not Found: /categories/157/hotskus/
+WARNING 2020-02-16 20:16:24,396 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 404 6402
+INFO 2020-02-16 20:16:24,406 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2020-02-16 20:16:27,122 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2020-02-16 20:16:27,170 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 200
