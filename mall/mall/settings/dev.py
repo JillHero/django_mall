@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',  # 解决跨域请求
+    'ckeditor',  # 富文本编辑器
+    'ckeditor_uploader',  # 富文本编辑器上传图片模块
+    'django_crontab',  # 页面静态化的定时任务
+
     'users.apps.UsersConfig',
     'verifications.apps.VerificationsConfig',
     'oauth.apps.OauthConfig',
@@ -70,7 +74,7 @@ ROOT_URLCONF = 'mall.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -251,7 +255,6 @@ EMAIL_HOST_PASSWORD = '3471515q'
 # 收件人看到的发件人
 EMAIL_FROM = 'jill<jill_hero@163.com>'
 
-
 # DRF缓存扩展
 REST_FRAMEWORK_EXTENSIONS = {
     # 缓存时间
@@ -259,3 +262,24 @@ REST_FRAMEWORK_EXTENSIONS = {
     # 缓存存储
     'DEFAULT_USE_CACHE': 'default',
 }
+
+# 富文本编辑器ckeditor配置
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',  # 工具条功能
+        'height': 300,  # 编辑器高度
+        # 'width': 300,  # 编辑器宽
+    },
+}
+CKEDITOR_UPLOAD_PATH = ''  # 上传图片保存路径，使用了FastDFS，所以此处设为''
+
+GENERATED_STATIC_HTML_FILES_DIR = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'front_end_pc')
+
+CRONJOBS = [
+    (
+        '*/5 * * * *', 'contents.crons.generate_static_index_html',
+        '>>' + os.path.join(os.path.dirname(BASE_DIR), 'logs/crontab.log'))
+]
+
+# 解决crontab中文问题
+CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
