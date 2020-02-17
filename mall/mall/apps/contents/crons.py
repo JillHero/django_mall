@@ -63,6 +63,3 @@ def generate_static_index_html():
     file_path = os.path.join(settings.GENERATED_STATIC_HTML_FILES_DIR, 'index.html')
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(html_text)
-
-
-generate_static_index_html()

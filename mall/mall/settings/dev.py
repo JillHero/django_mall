@@ -95,6 +95,7 @@ REST_FRAMEWORK = {
     ),
     # 异常处理
     'EXCEPTION_HANDLER': 'mall.utils.exceptions.exception_handler',
+    'DEFAULT_PAGINATION_CLASS': 'mall.utils.pagination.StandardResultsSetPagination',
 
 }
 
@@ -290,3 +291,15 @@ CRONJOBS = [
 
 # 解决crontab中文问题
 CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
+
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://192.168.222.102:9200/',  # 此处为elasticsearch运行的服务器ip地址，端口号固定为9200
+        'INDEX_NAME': 'mall',  # 指定elasticsearch建立的索引库的名称
+    },
+}
+
+# 当添加、修改、删除数据时，自动生成索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
