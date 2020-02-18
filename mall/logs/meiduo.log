@@ -3142,3 +3142,35 @@ INFO 2020-02-18 19:08:20,159 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201
 WARNING 2020-02-18 19:10:02,874 base 152 Not Found: /categories/115/hotskus/
 WARNING 2020-02-18 19:10:02,875 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6750
 INFO 2020-02-18 19:10:02,886 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2020-02-18 19:15:02,891 base 152 Not Found: /categories/115/hotskus/
+WARNING 2020-02-18 19:15:02,892 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6750
+INFO 2020-02-18 19:15:02,902 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2020-02-18 19:20:03,441 base 152 Not Found: /categories/115/hotskus/
+WARNING 2020-02-18 19:20:03,442 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6750
+INFO 2020-02-18 19:20:03,456 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2020-02-18 19:25:02,929 base 152 Not Found: /categories/115/hotskus/
+WARNING 2020-02-18 19:25:02,931 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6750
+INFO 2020-02-18 19:25:02,940 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2020-02-18 19:30:02,385 base 152 Not Found: /categories/115/hotskus/
+WARNING 2020-02-18 19:30:02,386 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6750
+INFO 2020-02-18 19:30:02,400 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2020-02-18 19:35:02,891 base 152 Not Found: /categories/115/hotskus/
+WARNING 2020-02-18 19:35:02,892 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6750
+INFO 2020-02-18 19:35:02,902 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2020-02-18 19:40:03,445 base 152 Not Found: /categories/115/hotskus/
+WARNING 2020-02-18 19:40:03,447 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6750
+INFO 2020-02-18 19:40:03,456 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2020-02-18 19:45:02,752 base 152 Not Found: /categories/115/hotskus/
+WARNING 2020-02-18 19:45:02,753 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6750
+INFO 2020-02-18 19:45:02,768 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2020-02-18 19:50:04,019 base 152 Not Found: /categories/115/hotskus/
+WARNING 2020-02-18 19:50:04,020 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6750
+INFO 2020-02-18 19:50:04,034 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2020-02-18 20:11:26,909 base 152 Not Found: /categories/115/hotskus/
+WARNING 2020-02-18 20:11:26,909 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6750
+INFO 2020-02-18 20:11:26,920 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2020-02-18 20:11:28,513 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2020-02-18 20:11:28,531 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2020-02-18 20:11:28,570 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 238
+INFO 2020-02-18 20:11:30,483 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-18 20:15:03,383 basehttp 124 "GET /cart/ HTTP/1.1" 200 251

@@ -9,7 +9,8 @@ from rest_framework.generics import GenericAPIView
 from rest_framework.response import Response
 
 from carts.constants import CART_COOKIES_EXPIRES
-from carts.serializers import CartSerializer
+from carts.serializers import CartSerializer, CartSKUSerializer
+from goods.models import SKU
 
 
 class CartView(GenericAPIView):
@@ -64,3 +65,37 @@ class CartView(GenericAPIView):
             response = Response(s.data)
             response.set_cookie('cart', cart_cookie, max_age=CART_COOKIES_EXPIRES)
             return response
+
+    def get(self, request):
+        try:
+            user = request.user
+        except Exception:
+            user = None
+
+        if user and user.is_authenticated:
+            redis_conn = get_redis_connection("cart")
+            redis_cart = redis_conn.hgetall("cart_%s" % user.id)
+            redis_cart_selected = redis_conn.smembers("selected_%s" % user.id)
+
+            cart_dict = {}
+            for sku_id, count in redis_cart.items():
+                cart_dict[int(sku_id)] = {
+                    'count': int(count),
+                    'selected': sku_id in redis_cart_selected
+                }
+
+
+        else:
+            cookie_cart = request.COOKIES.get("cart")
+            if cookie_cart:
+                cart_dict = pickle.loads(base64.b64decode(cookie_cart.decode()))
+            else:
+                cart_dict = {}
+
+        sku_obj_list = SKU.objects.filter(id__in=cart_dict.keys())
+        for sku in sku_obj_list:
+            sku.count = cart_dict[sku.id]['count']
+            sku.selected = cart_dict[sku.id]['selected']
+
+        s = CartSKUSerializer(instance=sku_obj_list, many=True)
+        return Response(s.data)
