@@ -3191,3 +3191,54 @@ INFO 2020-02-18 20:40:17,272 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
 INFO 2020-02-18 20:40:17,684 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
 INFO 2020-02-18 20:40:18,128 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
 INFO 2020-02-18 20:40:18,486 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2020-02-18 20:45:03,358 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-18 20:50:04,571 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-18 20:55:02,368 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+ERROR 2020-02-18 20:59:48,867 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 146, in delete
+    s.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 430, in run_validation
+    value = self.to_internal_value(data)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/serializers.py", line 489, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/serializers.py", line 35, in validate_sku_id
+    sku = SKU.objects.get(id=value['sku_id'])
+TypeError: 'int' object is not subscriptable
+ERROR 2020-02-18 20:59:48,930 basehttp 124 "DELETE /cart/ HTTP/1.1" 500 20122
+INFO 2020-02-18 21:05:03,154 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2020-02-18 21:05:03,248 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-18 21:08:19,467 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-18 21:08:20,853 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-18 21:08:21,537 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-18 21:08:24,705 basehttp 124 "OPTIONS /cart/selection/ HTTP/1.1" 200 0
+WARNING 2020-02-18 21:08:24,719 base 152 Not Found: /cart/selection/
+WARNING 2020-02-18 21:08:24,720 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 6890
+WARNING 2020-02-18 21:08:25,144 base 152 Not Found: /cart/selection/
+WARNING 2020-02-18 21:08:25,145 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 6890
+INFO 2020-02-18 21:08:35,610 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2020-02-18 21:08:35,977 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2020-02-18 21:08:36,461 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2020-02-18 21:08:36,849 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2020-02-18 21:09:31,215 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-18 21:10:04,659 basehttp 124 "GET /cart/ HTTP/1.1" 200 251

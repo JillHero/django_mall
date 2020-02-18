@@ -7,9 +7,10 @@ from django_redis import get_redis_connection
 from rest_framework import status
 from rest_framework.generics import GenericAPIView
 from rest_framework.response import Response
+from rest_framework.views import APIView
 
 from carts.constants import CART_COOKIES_EXPIRES
-from carts.serializers import CartSerializer, CartSKUSerializer, CartDeleteSeriazlier
+from carts.serializers import CartSerializer, CartSKUSerializer, CartDeleteSeriazlier, SelectAllSeriazlier
 from goods.models import SKU
 
 
@@ -169,5 +170,45 @@ class CartView(GenericAPIView):
             if sku_id in cart_dict:
                 del cart_dict[sku_id]
                 cart_cookie = base64.b64encode(pickle.dumps(cart_dict)).decode()
+                response.set_cookie("cart", cart_cookie, max_age=CART_COOKIES_EXPIRES)
+            return response
+
+
+class CartSelectAllView(APIView):
+    def put(self, request):
+        s = SelectAllSeriazlier(data=request.data)
+        s.is_valid(raise_exception=True)
+        selected = s.validated_data['selected']
+
+        try:
+            user = request.user
+        except Exception:
+            user = None
+        if user and user.is_authenticated:
+            redis_conn = get_redis_connection("cart")
+            redis_cart = redis_conn.hgetall("cart_%s" % user.id)
+            sku_id_list = redis_cart.keys()
+            if selected:
+                redis_conn.sadd("selected_%s" % user.id, *sku_id_list)
+            else:
+                redis_conn.srem("selected_%s" % user.id, *sku_id_list)
+            return Response({"message":"ok"})
+
+
+        else:
+            cookies_cart = request.COOKIES.get("cart")
+            if cookies_cart:
+                cart_dict = pickle.loads(base64.b64decode(cookies_cart.encode()))
+            else:
+                cart_dict = {}
+
+            response  = Response({"message":"OK"})
+
+            if cart_dict:
+                for count_seleted_dict in cart_dict.values():
+                    count_seleted_dict['selected'] = selected
+
+                cart_cookie = base64.b64encode(pickle.dumps(cart_dict)).decode()
                 response.set_cookie("cart",cart_cookie,max_age=CART_COOKIES_EXPIRES)
             return response
+

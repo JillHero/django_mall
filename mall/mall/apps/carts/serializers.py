@@ -32,7 +32,10 @@ class CartDeleteSeriazlier(serializers.Serializer):
 
     def validate_sku_id(self,value):
         try:
-            sku = SKU.objects.get(id=value['sku_id'])
+            sku = SKU.objects.get(id=value)
         except SKU.DoesNotExist:
             raise serializers.ValidationError("商品不存在")
         return value
+
+class SelectAllSeriazlier(serializers.Serializer):
+    selected = serializers.BooleanField(label='全选')
