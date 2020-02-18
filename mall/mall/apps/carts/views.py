@@ -9,7 +9,7 @@ from rest_framework.generics import GenericAPIView
 from rest_framework.response import Response
 
 from carts.constants import CART_COOKIES_EXPIRES
-from carts.serializers import CartSerializer, CartSKUSerializer
+from carts.serializers import CartSerializer, CartSKUSerializer, CartDeleteSeriazlier
 from goods.models import SKU
 
 
@@ -138,4 +138,36 @@ class CartView(GenericAPIView):
                 cart_cookies = base64.b64encode(pickle.dumps(cart_dict)).decode()
 
                 response.set_cookie("cart", cart_cookies, max_age=CART_COOKIES_EXPIRES)
+            return response
+
+    def delete(self, request):
+        s = CartDeleteSeriazlier(data=request.data)
+        s.is_valid(raise_exception=True)
+
+        sku_id = s.validated_data['sku_id']
+        try:
+            user = request.user
+        except Exception:
+            user = None
+
+        if user and user.is_authenticated:
+            redis_conn = get_redis_connection("cart")
+            pl = redis_conn.pipeline()
+            pl.hdel("cart_%s" % user.id, sku_id)
+            pl.srem("selected_%s" % user.ud, sku_id)
+            pl.execute()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+
+        else:
+            cookies_cart = request.COOKIES.get("cart")
+            if cookies_cart:
+                cart_dict = pickle.loads(base64.b64decode(cookies_cart.encode()))
+            else:
+                cart_dict = {}
+
+            response = Response(status=status.HTTP_204_NO_CONTENT)
+            if sku_id in cart_dict:
+                del cart_dict[sku_id]
+                cart_cookie = base64.b64encode(pickle.dumps(cart_dict)).decode()
+                response.set_cookie("cart",cart_cookie,max_age=CART_COOKIES_EXPIRES)
             return response
