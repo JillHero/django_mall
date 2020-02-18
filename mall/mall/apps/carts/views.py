@@ -99,3 +99,43 @@ class CartView(GenericAPIView):
 
         s = CartSKUSerializer(instance=sku_obj_list, many=True)
         return Response(s.data)
+
+    def put(self, request):
+        s = self.get_serializer(data=request.data)
+        s.is_valid(raise_exception=True)
+        sku_id = s.validated_data['sku_id']
+        count = s.validated_data['count']
+        selected = s.validated_data['selected']
+        try:
+            user = request.user
+        except Exception:
+            user = None
+
+        if user and user.is_authenticated:
+            redis_conn = get_redis_connection("cart")
+            pl = redis_conn.pipeline()
+            pl.hset("cart_%s" % user.id, sku_id, count)
+            if selected:
+                pl.sadd("selected_%s" % user.id, sku_id)
+            else:
+                pl.srem("selected_%s" % user.id, sku_id)
+            pl.execute()
+            return Response(s.data, status=status.HTTP_200_OK)
+        else:
+            cookies_cart = request.COOKIES.get("cart")
+            if cookies_cart:
+                cart_dict = pickle.loads(base64.b64decode(cookies_cart.encode()))
+            else:
+                cart_dict = {}
+
+            response = Response(s.data)
+
+            if sku_id in cart_dict:
+                cart_dict[sku_id] = {
+                    "count": count,
+                    "selected": selected
+                }
+                cart_cookies = base64.b64encode(pickle.dumps(cart_dict)).decode()
+
+                response.set_cookie("cart", cart_cookies, max_age=CART_COOKIES_EXPIRES)
+            return response
