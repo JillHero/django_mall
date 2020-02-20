@@ -44,7 +44,7 @@ class CartView(GenericAPIView):
         else:
             cart_str = request.COOKIES.get("cart")
             if cart_str:
-                cart_byte = cart_str.decode()
+                cart_byte = cart_str.encode()
                 b_byte = base64.b64decode(cart_byte)
                 cart_dict = pickle.loads(b_byte)
 
@@ -89,7 +89,7 @@ class CartView(GenericAPIView):
         else:
             cookie_cart = request.COOKIES.get("cart")
             if cookie_cart:
-                cart_dict = pickle.loads(base64.b64decode(cookie_cart.decode()))
+                cart_dict = pickle.loads(base64.b64decode(cookie_cart.encode()))
             else:
                 cart_dict = {}
 
@@ -192,7 +192,7 @@ class CartSelectAllView(APIView):
                 redis_conn.sadd("selected_%s" % user.id, *sku_id_list)
             else:
                 redis_conn.srem("selected_%s" % user.id, *sku_id_list)
-            return Response({"message":"ok"})
+            return Response({"message": "ok"})
 
 
         else:
@@ -202,13 +202,12 @@ class CartSelectAllView(APIView):
             else:
                 cart_dict = {}
 
-            response  = Response({"message":"OK"})
+            response = Response({"message": "OK"})
 
             if cart_dict:
                 for count_seleted_dict in cart_dict.values():
                     count_seleted_dict['selected'] = selected
 
                 cart_cookie = base64.b64encode(pickle.dumps(cart_dict)).decode()
-                response.set_cookie("cart",cart_cookie,max_age=CART_COOKIES_EXPIRES)
+                response.set_cookie("cart", cart_cookie, max_age=CART_COOKIES_EXPIRES)
             return response
-

@@ -3242,3 +3242,337 @@ INFO 2020-02-18 21:08:36,461 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
 INFO 2020-02-18 21:08:36,849 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
 INFO 2020-02-18 21:09:31,215 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
 INFO 2020-02-18 21:10:04,659 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-18 21:15:04,873 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-18 21:20:03,102 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-20 16:46:53,303 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2020-02-20 16:46:53,394 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 92, in get
+    cart_dict = pickle.loads(base64.b64decode(cookie_cart.decode()))
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2020-02-20 16:46:53,482 basehttp 124 "GET /cart/ HTTP/1.1" 500 19318
+WARNING 2020-02-20 16:46:57,316 base 152 Not Found: /categories/115/
+WARNING 2020-02-20 16:46:57,317 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 6891
+ERROR 2020-02-20 16:46:57,325 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 92, in get
+    cart_dict = pickle.loads(base64.b64decode(cookie_cart.decode()))
+AttributeError: 'str' object has no attribute 'decode'
+WARNING 2020-02-20 16:46:57,329 base 152 Not Found: /categories/115/hotskus/
+WARNING 2020-02-20 16:46:57,334 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6915
+ERROR 2020-02-20 16:46:57,349 basehttp 124 "GET /cart/ HTTP/1.1" 500 19327
+INFO 2020-02-20 16:46:57,353 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+WARNING 2020-02-20 16:46:58,981 base 152 Not Found: /categories/115/hotskus/
+WARNING 2020-02-20 16:46:58,982 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 6915
+ERROR 2020-02-20 16:47:00,337 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 47, in post
+    cart_byte = cart_str.decode()
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2020-02-20 16:47:00,368 basehttp 124 "POST /cart/ HTTP/1.1" 500 19312
+ERROR 2020-02-20 16:47:02,310 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 47, in post
+    cart_byte = cart_str.decode()
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2020-02-20 16:47:02,341 basehttp 124 "POST /cart/ HTTP/1.1" 500 19312
+ERROR 2020-02-20 16:47:03,447 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 92, in get
+    cart_dict = pickle.loads(base64.b64decode(cookie_cart.decode()))
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2020-02-20 16:47:03,465 basehttp 124 "GET /cart/ HTTP/1.1" 500 19318
+ERROR 2020-02-20 16:47:06,060 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 47, in post
+    cart_byte = cart_str.decode()
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2020-02-20 16:47:06,077 basehttp 124 "POST /cart/ HTTP/1.1" 500 19312
+ERROR 2020-02-20 16:47:06,252 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 47, in post
+    cart_byte = cart_str.decode()
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2020-02-20 16:47:06,293 basehttp 124 "POST /cart/ HTTP/1.1" 500 19312
+ERROR 2020-02-20 16:47:09,352 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 47, in post
+    cart_byte = cart_str.decode()
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2020-02-20 16:47:09,371 basehttp 124 "POST /cart/ HTTP/1.1" 500 19312
+ERROR 2020-02-20 16:47:11,284 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 92, in get
+    cart_dict = pickle.loads(base64.b64decode(cookie_cart.decode()))
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2020-02-20 16:47:11,312 basehttp 124 "GET /cart/ HTTP/1.1" 500 19318
+ERROR 2020-02-20 16:48:58,398 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 47, in post
+    cart_byte = cart_str.decode()
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2020-02-20 16:48:58,415 basehttp 124 "POST /cart/ HTTP/1.1" 500 19312
+INFO 2020-02-20 16:49:26,319 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+ERROR 2020-02-20 16:49:30,598 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 92, in get
+    cart_dict = pickle.loads(base64.b64decode(cookie_cart.decode()))
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2020-02-20 16:49:30,675 basehttp 124 "GET /cart/ HTTP/1.1" 500 19318
+ERROR 2020-02-20 16:49:31,985 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 92, in get
+    cart_dict = pickle.loads(base64.b64decode(cookie_cart.decode()))
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2020-02-20 16:49:32,004 basehttp 124 "GET /cart/ HTTP/1.1" 500 19318
+ERROR 2020-02-20 16:49:44,793 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jill/PycharmProjects/django_mall/mall/mall/apps/carts/views.py", line 92, in get
+    cart_dict = pickle.loads(base64.b64decode(cookie_cart.encode()))
+AttributeError: 'str' object has no attribute 'decode'
+ERROR 2020-02-20 16:49:44,851 basehttp 124 "GET /cart/ HTTP/1.1" 500 19318
+INFO 2020-02-20 16:49:48,653 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-20 16:50:03,252 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-20 16:50:09,024 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2020-02-20 16:50:10,079 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2020-02-20 16:50:10,568 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2020-02-20 16:50:11,392 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-20 16:53:18,496 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2020-02-20 16:53:18,646 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2020-02-20 16:53:20,784 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2020-02-20 16:53:24,028 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2020-02-20 16:55:02,969 basehttp 124 "GET /cart/ HTTP/1.1" 200 251

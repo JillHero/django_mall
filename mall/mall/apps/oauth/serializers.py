@@ -72,6 +72,7 @@ class QAuthQQUserSerizlizer(serializers.ModelSerializer):
         payload = jwt_payload_handler(user)
         token = jwt_encode_handler(payload)
         user.token = token
+        self.context['view'].user =user
         return user
 
 
