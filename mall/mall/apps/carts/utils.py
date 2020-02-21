@@ -5,26 +5,7 @@ from django_redis import get_redis_connection
 
 
 def merge_cart_cookie_to_redis(request, user, response):
-    """
-    redis_cart = {
-        '1':'20',
-        '2':'2',
-    }
-    redis_cart_selected = set(1)
 
-    cookie_cart = {
-        1:
-        {
-        'count':10,
-        'selected':True
-        }
-        2:{
-        'count':20,
-        'selected':False
-        }
-    }
-    :return:
-    """
     # 获取cookie中的数据
     cookie_cart = request.COOKIES.get("cart")
     if not cookie_cart:
@@ -43,6 +24,26 @@ def merge_cart_cookie_to_redis(request, user, response):
 
     redis_cart_selected_add = []
     redis_cart_selected_remove = []
+
+    """
+    redis_cart = {
+        '1':'20',
+        '2':'2',
+    }
+    redis_cart_selected = set(1)
+
+    cookie_cart = {
+        1:
+        {
+        'count':10,
+        'selected':True
+        }
+        2:{
+        'count':20,
+        'selected':False
+        }
+    }
+    """
 
     for sku_id, count_selected_dict in cookie_cart_dict.items():
         # 处理商品的数量，维护在redis中数据数量的字典里

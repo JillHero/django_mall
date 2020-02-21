@@ -7,7 +7,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import GenericViewSet, ReadOnlyModelViewSet
-from rest_framework_extensions.cache.mixins import CacheResponseMixin
+from rest_framework_extensions.cache.mixins import CacheResponseMixin, ListCacheResponseMixin
 
 from areas.models import Area
 # from areas.serializers import UserAddressSerializer, AddressTitleSerializer
@@ -60,17 +60,33 @@ from areas.models import Area
 from areas.serializers import AreaSerializer, SubAreaSerializer
 
 
-class AreaViewSet(CacheResponseMixin, ReadOnlyModelViewSet):
+class AreaViewSet(ReadOnlyModelViewSet):
+    pagination_class = None  # 区划信息不分页
 
     def get_queryset(self):
         if self.action == 'list':
             return Area.objects.filter(parent=None)
         else:
             return Area.objects.all()
-
     def get_serializer_class(self):
         if self.action == "list":
             return AreaSerializer
         else:
             return SubAreaSerializer
 
+
+# class AreaViewSet(ListCacheResponseMixin, ReadOnlyModelViewSet):
+#     pagination_class = None  # 区划信息不分页
+#
+#     def get_queryset(self):
+#         if self.action == "list":
+#             return Area.objects.filter(parent=None)
+#         else:
+#             return Area.objects.all()
+#
+#     def get_serializer_class(self):
+#         if self.action == "list":
+#             return AreaSerializer
+#         else:
+#             return SubAreaSerializer
+#
