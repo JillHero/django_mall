@@ -36,5 +36,5 @@ class OrderSettlementView(GenericAPIView):
 
 
 class SaveOrderView(CreateAPIView):
-    serializer_class = SaveOrderSerializer
     permission_classes = [IsAuthenticated]
+    serializer_class = SaveOrderSerializer
