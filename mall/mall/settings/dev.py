@@ -316,5 +316,5 @@ HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 # 支付宝
 ALIPAY_APPID = 2016100100639708
 ALIPAY_DEBUG = True
-RETURN_URL = 'http://www.meiduo.site:8000/pay_success.html'
+RETURN_URL = 'http://www.meiduo.site:8080/pay_success.html'
 ALIPAY_URL = 'https://openapi.alipaydev.com/gateway.do'
