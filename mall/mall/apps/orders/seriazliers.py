@@ -99,7 +99,7 @@ class SaveOrderSerializer(serializers.ModelSerializer):
                         # sku.sales += sku_count
                         # sku.save()
                         new_stock = origin_stock - sku_count
-                        new_sales = origin_stock + sku_count
+                        new_sales = origin_sales + sku_count
                         # 返回受影响的函数
                         result = SKU.objects.filter(id=sku.id, stock=origin_stock).update(stock=new_stock,
                                                                                           sales=new_sales)
